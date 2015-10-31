@@ -1,0 +1,6 @@
+/.ideas
+node_modules
+.sass-cache
+dist
+output
+src/image/*.psd
