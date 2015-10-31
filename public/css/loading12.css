@@ -1,0 +1,84 @@
+#spinner12 {
+    height: 140px;
+    width: 150px;
+    padding-top: 10px;
+    position: relative;
+}
+
+#spinner12 .cercle {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    border-radius: 50%;
+    background: linear-gradient(#f046b4,#FFECEE);
+    animation: turnCercle 2s infinite;
+    -webkit-animation: turnCercle 5s infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+}
+
+#spinner12 .cercleCache {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #592780;
+    z-index: 5;
+}
+
+#spinner12 .caseViolette #load {
+    color: #f046b4;
+    font-family: calibri;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#spinner12 .point {
+    height: 2px;
+    width: 2px;
+    position: relative;
+    top: -22px;
+    left: 96px;
+    border-radius: 50%;
+    background-color: #f046b4;
+    animation: point 1.5s infinite;
+    -webkit-animation: point 1.5s infinite;
+    animation-timing-function: linear;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes turnCercle {
+    0% {-webkit-transform : rotate(0deg);}
+    100% {-webkit-transform : rotate(10080deg);}
+}
+
+@keyframes turnCercle {
+    0% {transform : rotate(0deg);}
+    100% {transform : rotate(10080deg);}
+}
+
+@-webkit-keyframes point {
+    0% {left : 96px; opacity : 0;}
+    5% {left : 96px; opacity : 1;}
+    15% {left : 96px; opacity : 0;}
+    30% {left : 99px; opacity : 0;}
+    45% {left : 99px; opacity : 1;}
+    60% {left : 99px; opacity : 0;}
+    75% {left : 102px; opacity : 0;}
+    90% {left : 102px; opacity : 1;}
+    100% {left : 102px; opacity : 0;}
+}
+
+@keyframes point {
+    0% {left : 96px; opacity : 0;}
+    5% {left : 96px; opacity : 1;}
+    15% {left : 96px; opacity : 0;}
+    30% {left : 99px; opacity : 0;}
+    45% {left : 99px; opacity : 1;}
+    60% {left : 99px; opacity : 0;}
+    75% {left : 102px; opacity : 0;}
+    90% {left : 102px; opacity : 1;}
+    100% {left : 102px; opacity : 0;}
+}
